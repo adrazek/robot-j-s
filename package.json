@@ -1,0 +1,29 @@
+{
+  "name": "Robot(J)s",
+  "version": "0.0.1",
+  "description": "Robot game library",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrazek/robot-j-s"
+  },
+  "keywords": [
+    "TCP",
+    "robot",
+    "nodeJs",
+    "game",
+    "developers"
+  ],
+  "author": "Arnaud Drazek <adrazek@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/adrazek/robot-j-s/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "chai": "~1.9.1"
+  }
+}
