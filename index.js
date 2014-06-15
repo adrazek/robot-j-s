@@ -22,5 +22,8 @@ module.exports = {
 		if (typeof robotService == 'undefined' || !robotService)
 			robotService = require('./service/robot').RobotService;
 		return robotService;
+	},
+	BaseClient: function() {
+		return require('./client/base');
 	}
 };
