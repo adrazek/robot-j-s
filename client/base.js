@@ -14,6 +14,8 @@ BaseClient.prototype = Object.create(events.EventEmitter.prototype, {
 							        }
 });
 
+BaseClient.prototype.socket = null;
+
 BaseClient.prototype.setSocket = function(socket){this.socket=socket;};
 BaseClient.prototype.getSocket = function(){return this.socket;};
 
