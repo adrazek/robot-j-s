@@ -1,13 +1,13 @@
 var Robot = function(){
 	var entity = {
-	id: null,
-	name: '',
+		id: null,
+		name: '',
 
-	getId: function(){return id;},
-	setId: function(robotId){id=robotId;},
+		getId: function(){return this.id;},
+		setId: function(id){this.id=id;},
 
-	getName: function(){return this.name;},
-	setName: function(robotName){this.name=robotName;},
+		getName: function(){return this.name;},
+		setName: function(name){this.name=name;},
 	}
 	return entity;
 }

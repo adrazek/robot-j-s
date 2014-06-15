@@ -4,12 +4,16 @@ var Ring = function(){
 
 	var entity = {
 		id: null,
+		name: '',
 		width: null,
 		height: null,
 		bots: {},
 
 		getId: function(){return id;},
 		setId: function(id){this.id=id;},
+
+		getName: function(){return this.name;},
+		setName: function(name){this.name=name;},
 
 		getWidth: function(){return this.width;},
 		setWidth: function(width){this.width=width;},
@@ -22,7 +26,7 @@ var Ring = function(){
 			this.bots[bot.getName()] = bot;
 		},
 
-		toString: function(){return '{width: ' + this.width.toString().blue + ', height: ' + this.height.toString().blue + '}'}, 
+		toString: function(){return this.name.yellow + ' {width: ' + this.width.toString().blue + ', height: ' + this.height.toString().blue + '}'}, 
 	}
 
 	return entity;
