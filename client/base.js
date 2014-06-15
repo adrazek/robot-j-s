@@ -19,4 +19,4 @@ BaseClient.prototype.socket = null;
 BaseClient.prototype.setSocket = function(socket){this.socket=socket;console.log('setting socket');};
 BaseClient.prototype.getSocket = function(){return this.socket;};
 
-BaseClient.prototype.emitTcp = function(event, params, fn){this.getSocket().emit(event, params, fn);};
+BaseClient.prototype.emitTcp = function(event, params, fn){this.socket.emit(event, params, fn);};
