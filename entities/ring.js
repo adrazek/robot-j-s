@@ -1,3 +1,5 @@
+var colors = require('colors');
+
 var Ring = function(){
 
 	var entity = {
@@ -10,7 +12,7 @@ var Ring = function(){
 		setId: function(id){this.id=id;},
 
 		getWidth: function(){return this.width;},
-		setWidth: function(width){this.width=width;},
+		setWidth: function(width){this.width=width;console.log('width: ' + this.width)},
 
 		getHeight: function(){return this.height;},
 		setHeight: function(height){this.height=height;},
@@ -19,6 +21,8 @@ var Ring = function(){
 		addBot: function(bot){
 			this.bots[bot.getName()] = bot;
 		},
+
+		toString: function(){return '{width: ' + this.width.blue + ', height: ' + this.height.toString().blue + '}'}, 
 	}
 
 	return entity;
