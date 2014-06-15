@@ -20,10 +20,7 @@ module.exports = {
 	},
 	getRobotService: function() {
 		if (typeof robotService == 'undefined' || !robotService)
-		{
-			console.log('Robot service created');
 			robotService = require('./service/robot').RobotService;
-		}
 		return robotService;
 	}
 };
