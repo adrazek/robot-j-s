@@ -1,4 +1,5 @@
-var Robot = {
+var Robot = function(){
+	var entity = {
 	id: null,
 	name: '',
 
@@ -7,11 +8,8 @@ var Robot = {
 
 	getName: function(){return this.name;},
 	setName: function(robotName){this.name=robotName;},
-
-	fromJSON: function(data){
-		this.id=data.id;
-		this.name=data.name;
 	}
+	return entity;
 }
 
 exports.Robot = Robot;

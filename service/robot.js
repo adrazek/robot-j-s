@@ -1,6 +1,7 @@
-var RobotService = {
+ RobotService = {
 	create: function(data){
-		var robot = require('../entities/robot').Robot;
+		var robotClass = require('../entities/robot').Robot;
+		var robot = new robotClass();
 		robot.setName(data.name);
 		return robot;
 	}

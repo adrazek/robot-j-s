@@ -1,7 +1,10 @@
 var RingService = {
 	create: function(data){
-		var ring = require('../entities/ring').Ring;
-		return new ring(data.width, data.height);
+		var ringClass = require('../entities/ring').Ring;
+		var ring = new ringClass();
+		ring.setWidth(data.width);
+		ring.setHeight(data.height);
+		return ring;
 	}
 };
 

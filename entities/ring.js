@@ -1,33 +1,27 @@
-var Ring = function(ringWidth, ringHeight){
-	var id;
-	var width=ringWidth;
-	var height=ringHeight;
-	var bots = new Array;
+var Ring = function(){
 
-	var getId = function(){return id;};
-	var setId = function(ringId){id=ringId;};
+	var entity = {
+		id: null,
+		width: null,
+		height: null,
+		bots: {},
 
-	var getWidth = function(){return width;};
-	var setWidth = function(ringWidth){width=ringWidth;};
+		getId: function(){return id;},
+		setId: function(id){this.id=id;},
 
-	var getHeight = function(){return width;};
-	var setHeight = function(ringHeight){width=ringHeight;};
+		getWidth: function(){return this.width;},
+		setWidth: function(width){this.width=width;},
 
-	var getBots = function(){return bots;}
-	var addBot = function(bot){
-		bots.push(bot);
+		getHeight: function(){return this.height;},
+		setHeight: function(height){this.height=height;},
+
+		getBots: function(){return this.bots;},
+		addBot: function(bot){
+			this.bots[bot.getName()] = bot;
+		},
 	}
 
-	return {
-		getId: getId,
-		setId: setId,
-		getWidth: getWidth,
-		setWidth: setWidth,
-		getHeight: getHeight,
-		setHeight: setHeight,
-		getBots: getBots,
-		addBot: addBot,
-	};
+	return entity;
 }
 
 exports.Ring = Ring;
