@@ -12,7 +12,7 @@ var Ring = function(){
 		setId: function(id){this.id=id;},
 
 		getWidth: function(){return this.width;},
-		setWidth: function(width){this.width=width;console.log('width: ' + this.width)},
+		setWidth: function(width){this.width=width;},
 
 		getHeight: function(){return this.height;},
 		setHeight: function(height){this.height=height;},
