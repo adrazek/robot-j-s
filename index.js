@@ -23,7 +23,5 @@ module.exports = {
 			robotService = require('./service/robot').RobotService;
 		return robotService;
 	},
-	BaseClient: function() {
-		return require('./client/base');
-	}
+	BaseClient: require('./client/base'),
 };
