@@ -22,7 +22,7 @@ var Ring = function(){
 			this.bots[bot.getName()] = bot;
 		},
 
-		toString: function(){return '{width: ' + this.width.blue + ', height: ' + this.height.toString().blue + '}'}, 
+		toString: function(){return '{width: ' + this.width.toString().blue + ', height: ' + this.height.toString().blue + '}'}, 
 	}
 
 	return entity;
