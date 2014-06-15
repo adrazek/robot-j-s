@@ -17,7 +17,10 @@
     "game",
     "developers"
   ],
-  "author": "Arnaud Drazek <adrazek@gmail.com>",
+  "author": {
+    "name": "Arnaud Drazek",
+    "email": "adrazek@gmail.com"
+  },
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/adrazek/robot-j-s/issues"
@@ -25,5 +28,13 @@
   "devDependencies": {
     "mocha": "~1.20.1",
     "chai": "~1.9.1"
-  }
+  },
+  "readme": "robot-j-s\n=========\n\nA TCP robot game in nodeJs\n",
+  "readmeFilename": "README.md",
+  "_id": "Robot(J)s@0.0.1",
+  "dist": {
+    "shasum": "5595ad016ec0b38fc04252b20adeed1002d69969"
+  },
+  "_resolved": "git://github.com/adrazek/robot-j-s.git#a1646460473d94279f8bc7c43933f65151c6d10a",
+  "_from": "Robot(J)s@git://github.com/adrazek/robot-j-s.git"
 }
