@@ -7,6 +7,7 @@ var Ring = function(){
 		name: '',
 		width: null,
 		height: null,
+		teamOner: null,
 		bots: {},
 
 		getId: function(){return id;},
@@ -25,6 +26,9 @@ var Ring = function(){
 		addBot: function(bot){
 			this.bots[bot.getName()] = bot;
 		},
+
+		getTeamOwner: function(){return this.teamOwner;},
+		setTeamOwner: function(team){this.teamOwner=team;},
 
 		toString: function(){return '[' + this.name.yellow + '] {width: ' + this.width.toString().blue + ', height: ' + this.height.toString().blue + '}'}, 
 	}
