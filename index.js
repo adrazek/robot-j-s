@@ -31,4 +31,5 @@ module.exports = {
 	},
 	BaseClient: require('./client/base'),
 	RingExecutor: require('./util/ring-executor').RingExecutor,
+	Compass: require('./util/compass'),
 };

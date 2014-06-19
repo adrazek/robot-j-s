@@ -9,8 +9,10 @@ var RingService = {
 		ring.setHeight(data.height);
 		return ring;
 	},
-	launch: function(ring){
+	launch: function(ring, sockets){
 		var executor = require('../util/ring-executor').RingExecutor;
+		executor.setRing(ring);
+		executor.setSockets(sockets);
 		executor.execute(ring);
 	}
 };

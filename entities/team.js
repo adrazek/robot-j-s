@@ -2,7 +2,7 @@ var Team = function(){
 	var entity = {
 		id: null,
 		name: '',
-		bots: {},
+		//bots: {},
 
 		getId: function(){return this.id;},
 		setId: function(id){this.id=id;},
@@ -10,9 +10,9 @@ var Team = function(){
 		getName: function(){return this.name;},
 		setName: function(name){this.name=name;},
 
-		getBots: function(){return this.bots;},
-		addBot: function(bot){this.bots[bot.getName()] = bot;},
-		removeBot: function(bot){delete this.bots[bot.getName()];}
+		//getBots: function(){return this.bots;},
+		//addBot: function(bot){this.bots[bot.getName()] = bot;},
+		//removeBot: function(bot){delete this.bots[bot.getName()];}
 	}
 	return entity;
 }
